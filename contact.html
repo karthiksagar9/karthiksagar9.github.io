@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="eng">
+ <head> 
+  <title>Contact form for your site by Anatoly Spektor</title>
+  <!-- Bootstrap CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+ </head>
+ <body>
+ <br />
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">My Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">About Me</a></li>
+            <li><a href="myworks.html">My Works</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+<br/>
+<br/>
+<br/>
+ <!-- Contacts -->
+ <div id="contacts">
+   <div class="row">	
+     <!-- Alignment -->
+	<div class="col-sm-offset-3 col-sm-6">
+	   <!-- Form itself -->
+          <form name="sentMessage" class="well" id="contactForm"  novalidate>
+	       <legend>Contact me</legend>
+		 <div class="control-group">
+                    <div class="controls">
+			<input type="text" class="form-control" 
+			   	   placeholder="Full Name" id="name" required
+			           data-validatio/n-required-message="Please enter your name" />
+			  <p class="help-block"></p>
+		   </div>
+	         </div> 	
+                <div class="control-group">
+                  <div class="controls">
+			<input type="email" class="form-control" placeholder="Email" 
+			   	            id="email" required
+			   		   data-validation-required-message="Please enter your email" />
+		</div>
+	    </div> 	
+			  
+               <div class="control-group">
+                 <div class="controls">
+				 <textarea rows="10" cols="100" class="form-control" 
+                       placeholder="Message" id="message" required
+		       data-validation-required-message="Please enter your message" minlength="5" 
+                       data-validation-minlength-message="Min 5 characters" 
+                        maxlength="999" style="resize:none"></textarea>
+		</div>
+               </div> 		 
+	     <div id="success"> </div> <!-- For success/fail messages -->
+	    <button type="submit" class="btn btn-primary pull-right">Send</button><br />
+          </form>
+	</div>
+      </div>
+    </div>
+	
+	
+ <!-- JS FILES -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+ <script src="dist/js/bootstrap.min.js"></script>
+ <script src="dist/js/jqBootstrapValidation.js"></script>
+ <script src="dist/js/contact_me.js"></script>
+
+  </body>
+</html>
